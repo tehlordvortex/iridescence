@@ -25,7 +25,14 @@
  *  });
  * ```
  */
+import "react-hot-loader";
+import { AppRegistry } from "react-native";
+import "./index.css";
+import App from "./App";
 
-import './index.css';
+AppRegistry.registerComponent("App", () => App);
+AppRegistry.runApplication("App", { rootTag: document.getElementById("root") });
 
-console.log('👋 This message is being logged by "renderer.js", included via webpack');
+console.log(
+  '👋 This message is being logged by "renderer.js", included via webpack'
+);
